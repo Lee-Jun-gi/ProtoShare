@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-console.log();
+
 const CreateProjectPage = () => {
   const [projectName, setProjectName] = useState("");
   const [description, setDescription] = useState("");
