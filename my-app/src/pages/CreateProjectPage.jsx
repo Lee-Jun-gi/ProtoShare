@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
+console.log();
 const CreateProjectPage = () => {
   const [projectName, setProjectName] = useState("");
   const [description, setDescription] = useState("");
@@ -41,7 +41,6 @@ const CreateProjectPage = () => {
     fetchProjects();
   }, []);
 
-  // 🔍 프로젝트 + 작업 콘솔 확인용 (개발 중 디버깅)
   useEffect(() => {
     projects.forEach((p) => {
       console.log("프로젝트:", p.title, "작업들:", p.tasks);
